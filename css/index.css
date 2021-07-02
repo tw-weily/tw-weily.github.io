@@ -50,16 +50,57 @@ table {
 /* Custom Changes Below */
 
 /* CSS HEX */
-/* --azure-x-11-web-color: #ecf8f8ff;
---isabelline: #eee4e1ff;
---almond: #e7d8c9ff;
---desert-sand: #e6beaeff;
---grullo: #b2967dff; */
+/* --antique-brass: #b98b73ff;
+--antique-brass-2: #cb997eff;
+--desert-sand: #ddbea9ff;
+--champagne-pink: #ffe8d6ff;
+--bone: #d4c7b0ff;
+--ash-gray: #b7b7a4ff;
+--artichoke: #a5a58dff;
+--ebony: #6b705cff;
+--black-olive: #3f4238ff; */
 
 body {
-    background-color: #ecf8f8ff;
+    background-color: #ffe8d6;
+}
+
+#nav-title {
+    font-family: 'Courgette', cursive;
+    font-weight: 100;
+}
+
+.nav .nav-link {
+    color: #6b705c;
+}
+
+.nav .nav-link.active {
+    background-color: #b7b7a4;
+}
+
+.nav .nav-link:hover {
+    color: #3f4238;
 }
 
 .content {
     margin-top: 100px;
+}
+
+#intro-container img {
+    width: 42%;
+    height: 42%;
+}
+
+#intro-container h1 {
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #3f4238;
+}
+
+#intro-container p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 100;
+    color: #6b705c;
 }
