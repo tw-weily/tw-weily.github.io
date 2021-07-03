@@ -25,24 +25,41 @@
     <!-- Navigation Bar -->
     <section>
         <div class="container" id="header-conatiner">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <span class="fs-4" id="nav-title">Thomas Weily</span>
-                </a>
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Section</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Section</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Section</a></li>
-                </ul>
-            </header>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" id="nav-title">Thomas Weily</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Section</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </section>
 
     <main>
-        <section class="container-fluid main-section">
+        <section class="container-fluid section-dark">
             <div class="container p-0 py-5" id="intro-container">
                 <div class="row align-items-center content">
                     <div class="col-6">
@@ -50,10 +67,12 @@
                             class="img-fluid shadow rounded mx-auto d-block">
                     </div>
                     <div class="col-6 text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-10">
-                                <h1 class="mb-3">Thomas Weily</h1>
-                                <p>Welcome to my website.</p>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <h1 class="mb-3 section-title">Thomas Weily</h1>
+                                    <p>Welcome to my website.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -65,24 +84,31 @@
             <div class="container py-5">
                 <div class="row align-items-center content">
                     <div class="col-6 text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-10">
-                                <h1 class="mb-3">Dummy Text</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores eum odio quae
-                                    distinctio quidem, quia iure, quaerat delectus, vel totam quo cum eligendi
-                                    assumenda! Exercitationem dolorem accusantium vero ad!
-                                    Omnis explicabo possimus voluptatem, sed vero cupiditate. Harum, consequatur fugit!
-                                    Repellat, omnis. Laudantium sunt, inventore, placeat perspiciatis iusto totam
-                                    commodi unde sit nostrum reiciendis fuga at impedit consequuntur harum sapiente?
-                                    Consequuntur, doloribus autem? Sapiente eos dicta harum ratione blanditiis totam
-                                    voluptas in esse atque ab quibusdam sunt quod nam, magnam quo accusantium, ipsa
-                                    fugiat quae rem autem? Est, molestias explicabo.
-                                    Magni ad velit minus laudantium quasi, doloribus nam? Ducimus commodi ex autem quas
-                                    tenetur optio asperiores. Aut quibusdam numquam eligendi dignissimos corrupti
-                                    facilis possimus magni. Fugiat temporibus voluptate velit blanditiis?
-                                    Possimus tempora obcaecati corporis asperiores, inventore veniam. Nesciunt iure amet
-                                    accusamus perferendis alias magni labore quod temporibus, reprehenderit ducimus fuga
-                                    odit sed deleniti, saepe hic officia libero voluptatem animi repellendus.</p>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <h1 class="mb-3 section-title">Dummy Text</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores eum odio
+                                        quae
+                                        distinctio quidem, quia iure, quaerat delectus, vel totam quo cum eligendi
+                                        assumenda! Exercitationem dolorem accusantium vero ad!
+                                        Omnis explicabo possimus voluptatem, sed vero cupiditate. Harum, consequatur
+                                        fugit!
+                                        Repellat, omnis. Laudantium sunt, inventore, placeat perspiciatis iusto totam
+                                        commodi unde sit nostrum reiciendis fuga at impedit consequuntur harum sapiente?
+                                        Consequuntur, doloribus autem? Sapiente eos dicta harum ratione blanditiis totam
+                                        voluptas in esse atque ab quibusdam sunt quod nam, magnam quo accusantium, ipsa
+                                        fugiat quae rem autem? Est, molestias explicabo.
+                                        Magni ad velit minus laudantium quasi, doloribus nam? Ducimus commodi ex autem
+                                        quas
+                                        tenetur optio asperiores. Aut quibusdam numquam eligendi dignissimos corrupti
+                                        facilis possimus magni. Fugiat temporibus voluptate velit blanditiis?
+                                        Possimus tempora obcaecati corporis asperiores, inventore veniam. Nesciunt iure
+                                        amet
+                                        accusamus perferendis alias magni labore quod temporibus, reprehenderit ducimus
+                                        fuga
+                                        odit sed deleniti, saepe hic officia libero voluptatem animi repellendus.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
