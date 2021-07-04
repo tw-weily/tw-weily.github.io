@@ -17,38 +17,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
     <title>John Smith</title>
 </head>
 
 <body>
+    <!-- Header -->
+    <section id="upper-header">
+        <div class="container-fluid pb-5 banner">
+            <div class="upper-title">Hello welcome to my website.</div>
+        </div>
+    </section>
+
     <!-- Navigation Bar -->
     <section>
-        <div class="container" id="header-conatiner">
-
-            <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container justify-content-center d-none d-md-block" id="navbar-conatiner">
+            <nav class="navbar sticky-top navbar-expand-md navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#" id="nav-title">John Smith</a>
+                    <!-- <a class="navbar-brand" href="#" id="nav-title">John Smith</a> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                            <li class="nav-item">
+                        <ul class="navbar-nav mb-2 mb-md-0 mx-auto">
+                            <li class="nav-item px-2">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item px-2">
                                 <a href="#" class="nav-link">About</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item px-2">
                                 <a href="#" class="nav-link">Section</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item px-2">
                                 <a href="#" class="nav-link">Section</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item px-2">
                                 <a href="#" class="nav-link">Section</a>
                             </li>
                         </ul>
@@ -63,8 +70,7 @@
             <div class="container p-0 py-5" id="intro-container">
                 <div class="row align-items-center content">
                     <div class="col-6">
-                        <img src="./img/self-masked.jpeg" alt=""
-                            class="img-fluid shadow rounded mx-auto d-block">
+                        <img src="./img/self-masked.jpeg" alt="" class="img-fluid shadow rounded mx-auto d-block">
                     </div>
                     <div class="col-6 text-center">
                         <div class="container">
@@ -88,26 +94,10 @@
                             <div class="row justify-content-center">
                                 <div class="col-10">
                                     <h1 class="mb-3 section-title">Dummy Text</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores eum odio
-                                        quae
-                                        distinctio quidem, quia iure, quaerat delectus, vel totam quo cum eligendi
-                                        assumenda! Exercitationem dolorem accusantium vero ad!
-                                        Omnis explicabo possimus voluptatem, sed vero cupiditate. Harum, consequatur
-                                        fugit!
-                                        Repellat, omnis. Laudantium sunt, inventore, placeat perspiciatis iusto totam
-                                        commodi unde sit nostrum reiciendis fuga at impedit consequuntur harum sapiente?
-                                        Consequuntur, doloribus autem? Sapiente eos dicta harum ratione blanditiis totam
-                                        voluptas in esse atque ab quibusdam sunt quod nam, magnam quo accusantium, ipsa
-                                        fugiat quae rem autem? Est, molestias explicabo.
-                                        Magni ad velit minus laudantium quasi, doloribus nam? Ducimus commodi ex autem
-                                        quas
-                                        tenetur optio asperiores. Aut quibusdam numquam eligendi dignissimos corrupti
-                                        facilis possimus magni. Fugiat temporibus voluptate velit blanditiis?
-                                        Possimus tempora obcaecati corporis asperiores, inventore veniam. Nesciunt iure
-                                        amet
-                                        accusamus perferendis alias magni labore quod temporibus, reprehenderit ducimus
-                                        fuga
-                                        odit sed deleniti, saepe hic officia libero voluptatem animi repellendus.</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur accusantium
+                                        accusamus pariatur recusandae. Reiciendis vitae, iste modi aliquid similique
+                                        nesciunt nam iusto magnam molestiae maxime sapiente ut voluptatem, quo animi.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -115,6 +105,40 @@
                     <div class="col-6">
                         <img src="https://images.unsplash.com/photo-1470093014438-2ede8d7a4818?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                             alt="" class="img-fluid shadow rounded mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section  -->
+        <section>
+            <div class="container-fluid section-dark">
+                <div class="row justify-content-center py-5">
+                    <div class="col-8">
+                        <div id="carouselExampleControls" class="carousel slide shadow border border-light"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/Lake-Matheson.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/Lake-Matheson.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/Lake-Matheson.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

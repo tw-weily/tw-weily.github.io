@@ -3,63 +3,57 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Custom Changes Below */
 
 /* CSS HEX */
+
 :root {
---antique-brass: #b98b73ff;
---antique-brass-2: #cb997eff;
---desert-sand: #ddbea9ff;
---champagne-pink: #ffe8d6ff;
---bone: #d4c7b0ff;
---ash-gray: #b7b7a4ff;
---artichoke: #a5a58dff;
---ebony: #6b705cff;
---black-olive: #3f4238ff;
+    --antique-brass: #b98b73ff;
+    --antique-brass-2: #cb997eff;
+    --desert-sand: #ddbea9ff;
+    --champagne-pink: #ffe8d6ff;
+    --bone: #d4c7b0ff;
+    --ash-gray: #b7b7a4ff;
+    --artichoke: #a5a58dff;
+    --ebony: #6b705cff;
+    --black-olive: #3f4238ff;
 }
 
 html {
@@ -71,25 +65,40 @@ body {
     overflow-x: hidden;
 }
 
+#upper-header .banner {
+    background-image: url("../img/Lake-Matheson.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); */
+    -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#upper-header .upper-title {
+    font-size: 13em;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 500;
+    text-align: justify;
+    color: white;
+}
+
 #nav-title {
     font-family: 'Courgette', cursive;
     font-weight: 100;
     color: var(--black-olive);
 }
 
-.section-title {
-    
-}
-
-.nav .nav-link {
+.navbar .nav-link {
     color: var(--ebony);
+    font-size: 1.25em;
 }
 
-.nav .nav-link.active {
-    background-color: var(--black-olive);
+.navbar .nav-link.active {
+    /* background-color: var(--black-olive); */
 }
 
-.nav .nav-link:hover {
+.navbar .nav-link:hover {
     color: var(--black-olive);
 }
 
@@ -109,6 +118,10 @@ body {
     width: 42%;
     height: 42%;
     border: 1px solid var(--desert-sand);
+}
+
+.border-light{
+    border-color: var(--desert-sand);
 }
 
 #intro-container p {
@@ -139,22 +152,26 @@ body {
 }
 
 /* Mobile Screen Large */
+
 @media (max-width: 768px) {
     .section-dark h1, .section-light h1 {
         font-size: 2.5rem;
-    }  
+    }
+
+    #upper-header .upper-title {
+        font-size: 5em;
+    }
 }
 
 /* Small mobiles */
+
 @media (max-width: 414px) {
     .section-dark h1, .section-light h1 {
         font-size: 1.5em;
-    }  
-
+    }
     .section-dark p, .section-light p {
         font-size: 0.5em;
-    } 
-
+    }
     #intro-container img {
         width: 60%;
         height: 60%;
